@@ -25,19 +25,20 @@ function getData(j) {
     npm.load(configObject, function (er, npm) {
       jsdom.env({
         html: body,
-        scripts: ['http://code.jquery.com/jquery-1.6.min.js']
-      }, function (err, window) {
-        var $ = window.jQuery;
-        var $rows = $('body').find('.row');
+        scripts: ['http://code.jquery.com/jquery-1.6.min.js'],
+        done: function (err, window) {
+          var $ = window.jQuery;
+          var $rows = $('body').find('.row');
 
-        if ($rows.length > 1) {
-          $rows.each(function (i, item) {
-            var $a = $(item).find('a');
-            var module = $a.html();
+          if ($rows.length > 1) {
+            $rows.each(function (i, item) {
+              var $a = $(item).find('a');
+              var module = $a.html();
 
-            crawled(module);
-          });
-          getData(j + 1);
+              crawled(module);
+            });
+            getData(j + 1);
+          }
         }
       });
     });
