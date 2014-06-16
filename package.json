@@ -1,0 +1,24 @@
+{
+  "name": "npm-crawler",
+  "version": "0.0.0",
+  "description": "A npm registry crawler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/grant/npm-crawler.git"
+  },
+  "keywords": [
+    "npm",
+    "registry",
+    "crawler"
+  ],
+  "author": "Grant Timmerman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grant/npm-crawler/issues"
+  },
+  "homepage": "https://github.com/grant/npm-crawler"
+}
