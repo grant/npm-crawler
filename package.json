@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/grant/npm-crawler/issues"
   },
-  "homepage": "https://github.com/grant/npm-crawler"
+  "homepage": "https://github.com/grant/npm-crawler",
+  "dependencies": {
+    "jsdom": "^0.10.6",
+    "redis": "^0.10.3",
+    "request": "^2.36.0",
+    "npm": "^1.4.15"
+  }
 }
